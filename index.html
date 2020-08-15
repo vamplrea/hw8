@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+    Name: David Huynh
+    Email: david_huynh@student.uml.edu
+    Major: C.S (Senior year) in course 91.61 GUI Programming I
+    Date Created: 08/06/2020
+    Short Description: Assigment 8 -  Implementing a Bit of Scrabble with Drag-and-Drop
+    The purposes of this assignment are to give you additional experience working with the jQuery UI and to pull
+together much of what we’ve been doing throughout the semester. You are to implement a bit of the game of
+Scrabble using drag-and-drop. The idea is to display one line of the Scrabble board (one line sample) to the user
+along with seven letter tiles on a tile rack. The user then drags tiles to the board to make a word, and you are to
+report his or her score, taking the letter values and bonus squares into consideration.
+    Copyright (c) 2020 by David Huynh. All rights reserved
+-->
+<html lang="en">
+
+<head>
+    <!--  Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tittle text-->
+    <title>H.W 8</title>
+    <!-- CSS for jqueryui-->
+    <link href="https://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div id="box-container" class="container bg-info">
+            <h1 class="title">Scrabble game</h1>
+            <div id="Board"></div>
+            <div class="h1 ScoreBoard">
+                Word: <span id="word">____</span>
+                <div class="divider"></div>
+                Score: <span id="Score">0</span>
+                <div class="divider"></div>
+                Total Score: <span id="totalScore">0</span>
+              </br>
+                Remain tiles: <span id="remainingTiles">0</span>
+            </div>
+            <hr>
+            <span id="print"></span>
+            <hr>
+            <div id="rack"></div>
+            <div class="buttonBox">
+              <button id="submitWord" class="btn btn-primary btn-lg " onclick="submit()">Submit</button>
+              <button id="BtnRestartGame" class="btn btn-primary btn-lg " onclick="restart()">Restart</button>
+            </div>
+
+        </div>
+        <!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+           <script
+          src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+          integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+          crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/data.js"></script>
+        <script src="js/function.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

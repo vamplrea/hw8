@@ -1,0 +1,120 @@
+/*
+    Name: David Huynh
+    Email: david_huynh@student.uml.edu
+    Major: C.S (Senior year) in course 91.61 GUI Programming I
+    Date Created: 08/06/2020
+    Short Description: - Assigment 8 -  Implementing a Bit of Scrabble with Drag-and-Drop
+    Copyright (c) 2020 by David Huynh. All rights reserved*/
+
+
+/* body*/
+body {
+    background-image: url("https://images.alphacoders.com/613/thumb-1920-613734.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 2;
+}
+
+h1 {
+    text-align: center;
+}
+
+#box-container {
+    width: 1090px;
+    position: relative;
+    margin: 15px auto;
+    padding: 15px 35px 25px 35px;
+    border: 3px solid gray;
+    text-align: center;
+}
+
+
+
+.ScoreBoard {
+  font-size: 200%;
+  font-weight: 900;
+}
+
+.divider {
+  width: 16px;
+  height: auto;
+  display: inline-block;
+}
+
+
+button {
+   width: 200px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+
+button:hover {
+    background: green;
+}
+
+#Board {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-width: 1px;
+    padding-bottom: 20px;
+}
+
+.boardSlot {
+    border-style: solid;
+    border-color: black;
+    float: left;
+}
+
+#rack {
+    width: 720px;
+    height: 177px;
+    text-align: center;
+    background-image: url("../img/rack.png");
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    margin: 10px auto;
+}
+
+
+.lTile {
+    border-radius: 6px;
+    margin: 0;
+}
+
+/* Make the tile fixed to the rack */
+.tileRack  {
+    margin: 27px 5px 0px 5px;
+}
+
+/* Make the tile fixed to the scrabbleBoard */
+.tileBoard {
+    top: 3px;
+}
+
+/* Make the tile for the blank tile */
+.tileBox {
+    width: 40px;
+    height: 44px;
+    margin: 1px;
+    float: left;
+}
+.tileBox:hover {
+    box-shadow: 0px 0px 5px red;
+}
+
+/* Highlight drop targets when dragging a tile and hovering over a specific board slot. */
+.dragh {
+    box-shadow: 0px 0px 15px blue;
+}
+
+.hovertile {
+    box-shadow: 0px 0px 15px red;
+}
